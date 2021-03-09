@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1130367317}
     m_Modifications:
-    - target: {fileID: 2360474924508944813, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
     - target: {fileID: 2465086693683352020, guid: eeaae249d749e5942a385133fea94988, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3478
@@ -178,49 +174,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2465086693683352020, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.92
-      objectReference: {fileID: 0}
     - target: {fileID: 2465086693683352043, guid: eeaae249d749e5942a385133fea94988, type: 3}
       propertyPath: m_Name
       value: DoubleDoor (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2465086694076753471, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
-    - target: {fileID: 2465086695372246771, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
-    - target: {fileID: 2465086695415359534, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
-    - target: {fileID: 4462885763991624817, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
-    - target: {fileID: 4589015686071456450, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3d48cae41a6ff49932db60b4f0c7b6, type: 2}
-    - target: {fileID: 6198458284381603583, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: viewIdField
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 6198458284381603583, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: instantiationId
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514880190658578551, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: viewIdField
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514880190658578551, guid: eeaae249d749e5942a385133fea94988, type: 3}
-      propertyPath: instantiationId
-      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeaae249d749e5942a385133fea94988, type: 3}
@@ -324,7 +280,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61686
+  m_Name: pb_Mesh-20610
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3984,7 +3940,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61520
+  m_Name: pb_Mesh63484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
