@@ -12,12 +12,21 @@ public class Door : Photon.MonoBehaviour
         animator = GetComponent<Animator>();
         aS = GetComponent<AudioSource>();
     }
-    public void OpenDoor()
+    public void OpenDoor(int i)
     {
-        if (animator.GetBool("open"))
-            animator.SetBool("open", false);
+        if (animator.GetBool("openBack") || animator.GetBool("openFront")){
+            animator.SetBool("openBack", false);
+            animator.SetBool("openFront", false);
+        }
         else
-            animator.SetBool("open", true);
+        {
+            if (i == 0){
+                animator.SetBool("openBack", true);
+            }
+            else{
+                animator.SetBool("openFront", true);
+            }
+        }
     }
 
     public void DoorOpenSound()

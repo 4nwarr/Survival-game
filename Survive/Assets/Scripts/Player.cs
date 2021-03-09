@@ -86,9 +86,14 @@ public class Player : Photon.MonoBehaviour
                 {
                     GameObject myGO = hit.collider.gameObject;
 
-                    if (myGO.CompareTag("Door"))
+                    if (myGO.CompareTag("FrontCollider"))
                     {
-                        myGO.GetComponent<Door>().OpenDoor();
+                        myGO.transform.GetComponentInParent<Door>().OpenDoor(1);
+                    }
+
+                    if (myGO.CompareTag("BackCollider"))
+                    {
+                        myGO.transform.GetComponentInParent<Door>().OpenDoor(0);
                     }
 
                     if (myGO.CompareTag("Ammo"))
