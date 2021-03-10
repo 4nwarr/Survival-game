@@ -15,7 +15,7 @@ public class Gun : MonoBehaviour
     private AudioSource aS;
     public int ammo = 0;
     public int maxAmmo = 5;
-    public Text text;
+    private Text text;
     //public CameraShake shake;
 
     private void Start()
@@ -24,6 +24,8 @@ public class Gun : MonoBehaviour
         bulletPos = transform.GetChild(3).GetComponent<Transform>();
         an = GetComponent<Animator>();
         aS = GetComponent<AudioSource>();
+
+        text = GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(3).GetComponent<Text>();
     }
     public void Shoot(Vector3 rayOrigin, Camera cam)
     {

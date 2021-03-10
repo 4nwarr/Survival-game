@@ -12,7 +12,7 @@ public class Player : Photon.MonoBehaviour
     public PhotonView photonView;
     public Camera cam;
     Vector3 rayOrigin;
-    public GameObject gun, knife, globalLight, ammoCounter;
+    public GameObject gun, knife, globalLight;
     RaycastHit hit;
     public Role role;
     private SwitchWeapons sW;
@@ -23,6 +23,7 @@ public class Player : Photon.MonoBehaviour
     public GameObject lights;
     public GameObject eyes;
     public GameObject button;
+    private GameObject canvas;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class Player : Photon.MonoBehaviour
             eyes.SetActive(false);
 
             sW = FindObjectOfType<SwitchWeapons>();
+            canvas = GameObject.FindGameObjectWithTag("Canvas");
         }
     }
 
@@ -68,15 +70,15 @@ public class Player : Photon.MonoBehaviour
             {
                 case 0:
                     FindObjectOfType<Gun>().Shoot(rayOrigin, cam);
-                    ammoCounter.SetActive(true);
+                    canvas.transform.GetChild(3).gameObject.SetActive(true);
                     break;
                 case 1:
                     FindObjectOfType<Torch>().ActivateDisactivateTorch();
-                    ammoCounter.SetActive(false);
+                    canvas.transform.GetChild(3).gameObject.SetActive(false);
                     break;
                 case 2:
                     FindObjectOfType<Knife>().Attack();
-                    ammoCounter.SetActive(false);
+                    canvas.transform.GetChild(3).gameObject.SetActive(false);
                     break;
             }
 

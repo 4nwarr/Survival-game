@@ -805,7 +805,7 @@ MonoBehaviour:
   bullet: {fileID: 126751835145811296, guid: 187603c1f14e961448dca21fa3f79f19, type: 3}
   ammo: 0
   maxAmmo: 5
-  text: {fileID: 3084955581854218331, guid: 5af3bd58ef36f6340bd1ca33d5e52a9f, type: 3}
+  text: {fileID: 0}
 --- !u!82 &5854890554402070179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,6 @@ MonoBehaviour:
   gun: {fileID: 5854890554402070177}
   knife: {fileID: 5854890553987762140}
   globalLight: {fileID: 3876019665806703957, guid: 48bf2eab09734b54a99f055b7869a7c9, type: 3}
-  ammoCounter: {fileID: 3084955581854218329, guid: 5af3bd58ef36f6340bd1ca33d5e52a9f, type: 3}
   role: 0
   range: 5
   lightIsActive: 1
