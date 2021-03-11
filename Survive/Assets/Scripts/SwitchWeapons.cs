@@ -6,6 +6,8 @@ public class SwitchWeapons : Photon.MonoBehaviour
     public int currentWeapon = 0;
     public Camera cam;
     public PhotonView photonView;
+
+    private Vector3 velocity = Vector3.zero;
     void Start()
     {
         if (photonView.isMine)
@@ -47,9 +49,17 @@ public class SwitchWeapons : Photon.MonoBehaviour
             {
                 SwitchWeapon();
             }
-
-            this.gameObject.transform.eulerAngles = new Vector3(cam.transform.eulerAngles.x, cam.transform.eulerAngles.y, cam.transform.eulerAngles.z);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 defaultPos = new Vector3(cam.transform.eulerAngles.x, cam.transform.eulerAngles.y, cam.transform.eulerAngles.z);
+        this.gameObject.transform.eulerAngles = defaultPos;
+
+        Vector3 desiredPos = defaultPos - new Vector3(cam.transform.eulerAngles.x - 20, cam.transform.eulerAngles.y - 20, cam.transform.eulerAngles.z - 20);
+            
+        this.gameObject.transform.eulerAngles = Vector3.SmoothDamp(defaultPos, desiredPos, ref velocity, 1.5f);
     }
 
     private void SwitchWeapon()

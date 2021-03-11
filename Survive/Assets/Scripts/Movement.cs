@@ -15,8 +15,10 @@ public class Movement : Photon.MonoBehaviour
     Vector3 velocity;
     public float jump = 2;
     public float runSpeed = 7;
-    //public AudioSource aS;
+    //public AudioClip clip;
     public GameObject playerCamera;
+
+    private bool isPlaying;
 
     private void Awake()
     {
